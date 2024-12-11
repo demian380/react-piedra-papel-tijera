@@ -71,18 +71,21 @@ function Ppt() {
 
   return (
     <>
-      <div>
-        <h2>Piedra, papel o tijera</h2> 
-        <p>Seleccione:</p> 
-        {options.map((option) => (
-          <Item key={option.id} id={option.id} name={option.name} title ={option.title} emoji={option.emoji} disable={disable} handleClick={handleClick}/>
-          
-        ))}
+      <div className='container'>
+        
+          <h2>Piedra, papel o tijera</h2> 
+          <p>Seleccione:</p> 
+          <div className='items'>
+            {options.map((option) => (
+              <Item key={option.id} id={option.id} name={option.name} title ={option.title} emoji={option.emoji} disable={disable} handleClick={handleClick}/>
+              
+            ))}
+          </div>
+          {userChoice !== null && <p>{userMessage}</p>}
+          {cpuChoice !== null && <p>{cpuMessage}</p>}
+          {result !== null && <h2>{result === 0 ? '🎃 Empate' : result === 1 ? '✅ Ganaste' : '⛔ Perdiste'}</h2>}
+          {result !== null && <button onClick={resetGame}>Reiniciar</button>}
 
-        {userChoice !== null && <p>{userMessage}</p>}
-        {cpuChoice !== null && <p>{cpuMessage}</p>}
-        {result !== null && <h2>{result === 0 ? '🎃 Empate' : result === 1 ? '✅ Ganaste' : '⛔ Perdiste'}</h2>}
-        {result !== null && <button onClick={resetGame}>Reiniciar</button>}
       </div>
 
     </>

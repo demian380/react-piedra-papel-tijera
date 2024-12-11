@@ -8,6 +8,7 @@ const Item = React.memo(({ id, title, emoji, disable, handleClick }) => {
   console.log(`Renderizando Item ${id}`)
   return (
     <button
+        className='item'
         title={title}
         onClick={() => handleClick(id)}
         disabled={disable}
