@@ -7,7 +7,7 @@ body {
 
 /* Contenedor principal */
 .container {
-    margin: 80px auto 0;
+    margin: 50px auto 0;
     width: 90%; /* Ajusta el ancho automáticamente */
     max-width: 600px; /* Tamaño máximo para pantallas grandes */
     min-height: 60vh;
