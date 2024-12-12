@@ -1,13 +1,13 @@
 body{
     background: #3D5E87;
-    
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container{
     margin: 0 auto;
     margin-top: 80px;
     width: 40%;
-    height: 50vh;
+    min-height: 60vh;
     border: 1px solid black;
     padding: 20px;
     border-radius: 10px;
@@ -15,7 +15,7 @@ body{
 }
 
 .items{
-    background-color: rgba(248, 129, 45, 0.829);
+    background-color: rgb(247 115 22);
     padding: 10px;
     border-radius: 5px;
     display: flex;
@@ -23,12 +23,33 @@ body{
 
 }
 
+.center{
+    text-align: center;
+}
+
 .item{
     margin: 10px;
     padding: 10px;
-    border: 1px solid black;
+    border: 1px solid rgb(244, 191, 34);
     border-radius: 10px;
     background-color: rgb(246, 245, 237);
-    height: 50px;
-    width: 50px;
+    min-height: 60px;
+    min-width: 60px;
+    font-size: 40px;
+}
+
+.btn{
+    padding: 10px;
+    background-color: rgb(6, 210, 94);
+    border-radius: 5px;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: cursive;
+    border: 1px solid #8c8b8b;
+}
+
+.larger-text{
+    font-size: 16px;
 }
