@@ -83,7 +83,7 @@ function Ppt() {
           </div>
           {userChoice !== null && <h4 className='larger-text'>{userMessage}</h4>}
           {cpuChoice !== null && <h4 className='larger-text'>{cpuMessage}</h4>}
-          {result !== null && <h2>{result === 0 ? '🎃 Empate' : result === 1 ? '✅ Ganaste' : '⛔ Perdiste'}</h2>}
+          {result !== null && <h2>{result === 0 ? '🎃 Empate 😣' : result === 1 ? '✅ Ganaste 🎉' : '⛔ Perdiste 😭'}</h2>}
           <div className='center'>
             {result !== null && <button onClick={resetGame} className='btn'>Reiniciar</button>}
           </div>  
